@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:wght@300&display=swap');
+*{
+    height:100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+.App{
+    background: linear-gradient(-45deg, #F8F8F8,#48AC6C, #A2BFC5, #A88A63 );
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.Socials{
+    height: auto;
+    width: auto;
+    text-align:left;
+
+}
+
+.Socials ul{
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    margin-left: 15%;
+    max-width: 75%;
+    height: auto;
+}
+.Socials ul li{
+    list-style: none;
+    text-align: center;
+    width: 25%;
+}
+@media (max-width: 960px) and (min-width: 501px) {
+    .Socials li { width: 10%;}
+    *{max-height:100%;
+        width: auto;}
+   
+}
+
+@media (max-width: 500px) and (min-width: 0px){
+    .Socials li { width: 5%; }
+    *{max-height:100%;
+        width: auto;}
+}
+
+  
+  

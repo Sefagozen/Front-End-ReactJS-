@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Serif+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400&display=swap');
+
+.Home_content{
+    padding:15% ;
+    padding-right: auto;
+    text-align: center;
+    height: auto;
+}
+.Home_content h1{
+    font-size: 3vw;
+    font-family: 'Lobster', cursive;
+    overflow: hidden; 
+    border-right: .1em solid orange; 
+    white-space: nowrap; 
+    margin: 0; 
+    letter-spacing: .0.95em;
+    animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+.Home_content h1 span{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-weight:bold;
+}
+.Home_content p{
+    margin-top: 10%;
+    color: black;
+}
+.Photo1{
+    border-radius: 25%;
+    max-width: 45%;
+    max-height: 35%;
+    background-size: auto;
+}
+
+@media (max-width: 500px) {
+}
