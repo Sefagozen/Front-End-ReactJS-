@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* Navbar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+.LogoHolder {
+    max-width: 320px;
+    cursor: pointer;
+    display: flex;
+    max-height: 100px;
+}
+.LogoimgHolder1{
+    transition: .4s ease-in-out;
+}
+.LogoimgHolder2{
+    margin-left: 5px;
+    transition: .4s ease-in-out;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7.5%;
+    width: 100%;
+    border: rgba(0, 0, 0, 1);
+    position: fixed;
+    transition: 1s ease-in-out;
+    z-index: 999;
+}
+.active{
+    background-color: rgba(44,44,44, 0.9);
+    z-index: 1;
+}
+.active .navigationMain a{
+    color:white;
+}
+.active  .btnContact{
+    background-color: #8d98a8;
+}
+.active .LogoimgHolder2{
+    background-color: white;
+    border-radius: 15%;
+}
+.active .LogoimgHolder1{
+    background-color: white;
+    border-radius: 15%;
+}
+.navigationMain {
+    display: block;
+    z-index: 0;
+    margin-right: auto;
+}
+.navigationMain ul{
+    text-align: center;
+    margin:0px;
+    padding: 0px;
+}
+.navigationMain li{
+    text-align: center;
+    list-style-type:none;
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    overflow: hidden;
+}
+.navigationMain li:last-child{
+    padding-right: 0px;
+}
+.navigationMain a{
+    color: whitesmoke;
+    transition: 0.3s ease;
+    z-index: 0;
+}
+.navigationMain a:hover{
+    color: green;
+    text-decoration: none;
+}
+.btnContact{
+    background-color:rgba(0, 0, 0, 0.3);
+    padding: 10px 25px;
+    color: #FEFEFE;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.btnContact a{
+    background-color:rgba(0, 0, 0, 0);
+    color: white;
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    padding: 20px 5px;
+}
+.btnContact:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid #1c202a ;
+}
+.btnContact:hover a{ 
+    color: #1c202a;
+}
+.hamburgerMenu{
+    display: none;
+}
+/* .dpdown ul{
+    display: none;
+}
+.dpdown:hover ul{
+    padding: 0;
+    margin-left: -25px;
+    border-radius: 20%;
+    min-height: 100px;
+    min-width: 100px;
+    display: block;
+    position: absolute;
+    background-color: #88a99f;
+}
+.dpdown ul:hover{
+    display: block;
+}
+.dpdown ul li:hover{
+    min-width: 100px;
+    background: #3b3b3b;
+    font-weight: bold;
+}
+.dpdown li a{
+    text-decoration: none;
+    display: block;
+}
+.dpdown li{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 5px;
+} */
+@media only screen and (max-width: 768px) {
+    *{
+        width: 100%;
+        height: auto;
+    }
+    .LogoHolder{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navigationMain{
+        display: none;
+    }
+    .btnContact{
+        display: none;
+    }
+    .hamburgerMenu{
+        display: block;
+        font-size: 30px;
+        float: right;
+        width: auto;
+        color: white;
+    }
+    
+    .hamburgerMenu button{
+        background-color:rgba(255  , 255, 255, 0.3);
+        border: none;
+        border-radius: 30%;
+        transition: 0.3s ease;
+    }
+    .hamburgerMenu button:hover{
+        background-color: rgba(0, 0, 0, 0.4);
+        color:rgba(255  , 255, 255, 0.6);
+    }
+  }
+@media only screen and (max-width: 480px) {
+   
+  }
+
+
+/* Home */
+#Home{
+    background: url(https://images.pexels.com/photos/1487809/pexels-photo-1487809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) fixed no-repeat;
+    background-size: cover;
+    height: 600;
+    }
+
+.text h1,h5{
+    color: white;
+    text-align: center;
+}
+.text h1{
+    font-family: 'Lobster', cursive;
+    padding-top: 270px;
+    font-size: 60px;
+}
+.text h1+h5{
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 25px;
+}
+.boxHolder{
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 160px;
+    justify-content: center;
+    margin-bottom: -75px;
+}
+.box{
+   background-color:rgba(255, 255, 255, 1);
+   width: auto;
+   border: 1px solid rgba(0,0,0,0.4);
+   height: 100%;
+   transition: 0.3s ease;
+   cursor:default;
+   border-radius: 50px;
+   box-shadow: 3px 20px 6px rgba(0,0,0,0.4);
+   bottom: 10px;
+}
+.box:hover{
+    transform: translate(0,-10px);
+}
+#icon{
+    margin-top:20px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+.row h6{
+    font-family: 'Encode Sans', sans-serif;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 1000px){
+    .colHolder{
+        padding:20px 20px 20px 20px;
+        width: 75%;
+    }
+    .box h6{
+        font-size: 14px;
+        text-align: center;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+
+}
+/* About */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+#About{
+    background-image: url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment:local;
+    height: 800px;
+}
+.aboutHolder{
+    padding-top: 140px;
+    margin-bottom: 0;
+    overflow: hidden;
+    
+}
+.aboutHolder h3{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    color: #474747;
+}
+#Tree{
+    height: 100px;
+    text-align: center;
+    width: auto;
+}
+.textAbout{
+    text-align: center;
+    color:  	#565656;
+}
+.columnHolder{
+    margin-top: 100px;
+}
+.column {
+    text-align: center;
+    margin-bottom: 100px;
+
+  }
+.column img{
+    transition: 0.4s ease-in-out;
+    filter: grayscale(100%);
+    padding-top: 5px;
+    max-width: 15%;
+    height: auto;
+    overflow: hidden;
+}
+.column img:hover{
+    filter: grayscale(0%);
+}
+#first{
+    width: 400px;
+    margin-left: 1%;
+}
+
+  
+@media only screen and (max-width: 768px){
+}
+/* Production*/
+#Production{
+    height: 100%;
+    background: url(https://images.pexels.com/photos/1487809/pexels-photo-1487809.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+.ProductionHolder{
+    padding-top: 140px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+#Production h3{
+    color: white;
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ProductionHolder p{
+    color: white;
+    text-align: center;
+}
+.ProductionRows{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ProductionRows h5{
+    color: black;
+}
+.ColumnP{
+    background-color:rgba(255, 255, 255, 0.7);
+    width: auto;
+    border: 1px solid rgba(0,0,0,0.4);
+    height: auto;
+    cursor:default;
+    bottom: 10px;
+    box-shadow: 3px 20px 6px rgba(0,0,0,0.4);
+    transition: .4s ease-in-out;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+.ColumnP h4{
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.ColumnP:hover{
+    transform: translate(0,-10px);
+    background-color:rgba(255, 255, 255, 0.9);
+}
+.TablesContainer{
+    padding-top: 140px;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+table{
+    background-color: whitesmoke;
+    margin-top: 50px;
+}
+caption{
+    background-color: whitesmoke;
+    color: #444;
+}
+#Machines{
+    background-color: transparent;
+    height: 100%;
+}
+#Machines p{
+    color: white;
+}
+/* Products  */
+#Products{
+    background-image: url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-attachment:local;
+    height: 100%;
+  }
+  
+  .ProductsHolder{
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: #474747;
+  }
+  .ProductsHolder h3{
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  padding-right: 20px;
+  padding-top: 140px;
+  }
+  #Products .row{
+    padding:10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fabric{
+    border-radius: 20px;
+  }
+  .overlay{
+    position: absolute;
+    bottom: 8px;
+    right: 30px;
+  }
+  .overlay h5{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100px;
+    border-radius: 20px;
+  }
+  
